@@ -15,7 +15,7 @@ let nameElement = document.getElementById('name');
 let foodElement = document.getElementById('food');
 let yearElement = document.querySelector('#year');
 let imageElemennt = document.querySelector('img');
-let favFoods = ['sandwuich', 'pizza', 'chocolate', 'blackbeans'];
+let favFoods = ['sandwich', 'pizza', 'chocolate', 'blackbeans'];
 
 
 
