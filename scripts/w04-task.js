@@ -87,7 +87,7 @@ myProfile.hobbies.forEach(food=> {
 //call the ID places-lived
 let dlElement = document.getElementById("places-lived");
 
-//array iteration from myProfile
+//the array iteration from myProfile
 myProfile.placesLived.forEach(function(obj) {
   //create a dt element for each iteration in place element
   let dtElement = document.createElement("dt");
