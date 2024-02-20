@@ -52,7 +52,7 @@ const pintarCards = data => {
     });
     cards.appendChild(fragment)
 }
-
+//buttom target. stop propagation added ad the end of the each conditional
 const addCarrito = e =>{
     //console.log(e.target)
     //console.log(e.target.classList.contains('btn-dark'))
@@ -63,7 +63,7 @@ const addCarrito = e =>{
     e.stopPropagation()
 
 }
-
+//create a objet to add into the cart
 const setCarrito = objeto => {
     //console.log(objeto)
     const producto = {
@@ -78,7 +78,7 @@ const setCarrito = objeto => {
     carrito[producto.id] = {...producto}
     pintarCarrito()
 }
-
+//create the car calling template carrito
 const pintarCarrito = () => {
     //console.log(carrito)
     items.innerHTML = ''
@@ -98,7 +98,7 @@ const pintarCarrito = () => {
 
     localStorage.setItem('carrito', JSON.stringify(carrito))
 }
-
+// addind elements selected to the footer if no elements selected return a mesage
 const pintarFooter = () => {
     footer.innerHTML = ''
     if(Object.keys(carrito).length === 0){
@@ -106,7 +106,7 @@ const pintarFooter = () => {
 
         return
     }
-
+// calculate number of items/ price value
     const nCantidad = Object.values(carrito).reduce((acc, {cantidad})=> acc + cantidad, 0)
     const nPrecio = Object.values(carrito).reduce((acc, {cantidad, precio}) => acc + cantidad * precio, 0)
    
@@ -117,14 +117,14 @@ const pintarFooter = () => {
     fragment.appendChild(clone)
     footer.appendChild(fragment)
 
-
+    //delete de cart element selected. return car empty
     const btnVaciar = document.getElementById('vaciar-carrito')
     btnVaciar.addEventListener('click', () => {
         carrito = {}
         pintarCarrito()
     })
 }
-
+// control butom to increase and decrease items. if number of items = 0 delete him.
 const btnAccion = e => {
     if(e.target.classList.contains('btn-info')){
         
