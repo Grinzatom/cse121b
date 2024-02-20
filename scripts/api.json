@@ -1,0 +1,38 @@
+[
+  {
+    "precio": 2,
+    "id": 1,
+    "title": "Soda",
+    "thumbnailUrl": "images/soda.jpg"
+  },
+  {
+    "precio": 35,
+    "id": 2,
+    "title": "Pizza",
+    "thumbnailUrl": "images/pizza.jpg"
+  },
+  {
+    "precio": 1,
+    "id": 3,
+    "title": "Water",
+    "thumbnailUrl": "images/agua.jpg"
+  },
+  {
+    "precio": 10,
+    "id": 4,
+    "title": "Hamburguer",
+    "thumbnailUrl": "images/hamburguesa.jpg"
+  },
+  {
+    "precio": 5,
+    "id": 5,
+    "title": "Hot Dog",
+    "thumbnailUrl": "images/perro_caliente.jpg"
+  },
+  {
+    "precio": 3,
+    "id": 6,
+    "title": "French fries",
+    "thumbnailUrl": "images/papas.png"
+  }
+]
